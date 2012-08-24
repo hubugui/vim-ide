@@ -3,8 +3,6 @@
 mkdir -p ~/.vim/
 touch ~/.vimrc
 
-vim -es --servername VIM_IDE &
-
 #system clipboard
 sudo apt-get install vim-gnome
 
@@ -20,6 +18,8 @@ unzip taglist_45.zip -d ~/.vim
 #cscope
 sudo apt-get install cscope
 wget http://cscope.sourceforge.net/cscope_maps.vim -O ~/.vim/plugin/cscope_maps.vim
+
+vim -es --servername VIM_IDE &
 
 #omnicppcompelete
 unzip omnicppcomplete-0.41.zip -d ~/.vim 
