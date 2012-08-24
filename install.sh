@@ -1,5 +1,9 @@
-mkdir ~/.vim
+#!/bin/sh
+
+mkdir -p ~/.vim/
 touch ~/.vimrc
+
+vim -es --servername VIM_IDE &
 
 #system clipboard
 sudo apt-get install vim-gnome
@@ -21,11 +25,12 @@ wget http://cscope.sourceforge.net/cscope_maps.vim -O ~/.vim/plugin/cscope_maps.
 unzip omnicppcomplete-0.41.zip -d ~/.vim 
 
 #supertab
-#vim supertab.vmb
-#:so %
+vim --servername VIM_IDE --remote supertab.vmb
+vim --servername VIM_IDE --remote-send '<C-\><C-N>:so %<CR>'
 
-#cd ~/.vim/doc
-#vim --servername FILES --remote-silent "helptags."
-#cd $OLDPWD
+#refresh doc
+vim --servername VIM_IDE --remote ~/.vim/doc
+vim --servername VIM_IDE --remote-send '<C-\><C-N>:helptags. %<CR>'
 
+vim --servername VIM_IDE --remote-send '<C-\><C-N>:q %<CR>'
 cat .vimrc >> ~/.vimrc
