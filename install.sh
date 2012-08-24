@@ -30,7 +30,7 @@ vim --servername VIM_IDE --remote-send '<C-\><C-N>:so %<CR>'
 
 #refresh doc
 vim --servername VIM_IDE --remote ~/.vim/doc
-vim --servername VIM_IDE --remote-send '<C-\><C-N>:helptags. %<CR>'
+vim --servername VIM_IDE --remote-send '<C-\><C-N>:helptags.<CR>'
 
-vim --servername VIM_IDE --remote-send '<C-\><C-N>:q %<CR>'
+vim --servername VIM_IDE --remote-send '<C-\><C-N>:q<CR>'
 cat .vimrc >> ~/.vimrc
