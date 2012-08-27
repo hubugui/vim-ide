@@ -16,7 +16,7 @@ let Tlist_Exit_OnlyWindow = 1
 let Tlist_File_Fold_Auto_Close = 1
 let Tlist_Process_File_Always = 1
 let Tlist_Sort_Type = "name"
-let Tlist_Show_One_File = 0
+let Tlist_Show_One_File = 1
 let Tlist_Use_Right_Window = 1
 let Tlist_Use_SingleClick = 1
 map <silent> <F12> :TlistToggle<cr>
