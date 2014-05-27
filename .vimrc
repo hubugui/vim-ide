@@ -8,7 +8,7 @@ set autoindent
 map <silent> <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 "cscope
-map <silent> <C-F11> :!find $PWD -name *.c -o -name *.cc -o -name *.cpp -o -name *.h -o -name *.py -o -name *.js -o -name *.java -o -name *.lua -o -name *.go > cscope.files<CR> :!cscope -bkq -i cscope.files<CR> :cs reset<CR>
+map <silent> <C-F11> :!find $PWD -name \*.c -o -name \*.cc -o -name \*.cpp -o -name \*.h -o -name \*.py -o -name \*.js -o -name \*.java -o -name \*.lua -o -name \*.go > cscope.files<CR> :!cscope -bkq -i cscope.files<CR> :cs reset<CR>
 
 "taglist
 set tags=tags;
