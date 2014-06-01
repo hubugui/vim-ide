@@ -26,6 +26,7 @@ map <silent> <F12> :TlistToggle<cr>
 "OmniCppComplete
 set nocp
 filetyp plugin on
+set completeopt=longest,menu
 
 "NerdTree
 map <silent> <F9> :NERDTreeToggle<cr>
